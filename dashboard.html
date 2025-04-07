@@ -1,0 +1,19 @@
+<mat-sidenav-container class="container">
+  <!-- Sidebar -->
+  <mat-sidenav mode="side" opened class="sidenav">
+    <h3 class="title">Dashboard</h3>
+    <mat-nav-list>
+      <a mat-list-item routerLink="/dashboard">Dashboard</a>
+      <a mat-list-item routerLink="/send-fax">Send Fax</a>
+      <a mat-list-item routerLink="/receive-fax">Receive Fax</a>
+      <a mat-list-item routerLink="/fax-documents">Fax Documents</a>
+      <a mat-list-item routerLink="/my-dids">My DIDs</a>
+      <a mat-list-item routerLink="/administrators">Administrators</a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <!-- Main Content -->
+  <mat-sidenav-content class="content">
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
